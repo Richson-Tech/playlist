@@ -3,7 +3,7 @@ import React from "react";
 const PlayList = ({ songs, setCurrentSongs }) => {
   return (
     <div className="p-4">
-      {songs.map((songs, index) => (
+      {songs.map((song, index) => (
         <div
           key={index}
           className="flex items-center justify-center p-2 border-b border-gray-200 cursor-pointer"
@@ -22,3 +22,4 @@ const PlayList = ({ songs, setCurrentSongs }) => {
 };
 
 export default PlayList;
+ 
