@@ -1,10 +1,13 @@
-import React from 'react';
-import Hawler from 'react-howler';
+import React, { useRef } from "react";
+import Hawler from "react-howler";
 
-const Player = () => {
-  return (
-    <div>Player</div>
-  )
-}
+const Player = ({ currentSong, isPlaying, setIsplaying }) => {
+    const playerRef = useRef(null);
+    const handlePlayPause = (){
+        setIsplaying(!isPlaying)
+    }
 
-export default Player
+  return <div>Player</div>;
+};
+
+export default Player;
