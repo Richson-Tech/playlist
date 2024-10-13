@@ -24,6 +24,8 @@ const Player = ({ currentSong, isPlaying, setIsplaying }) => {
                         <button className="px-4 py-2 font-bold text-white bg-green-500 rounded-full" onClick={handlePlayPause}>{ isPlaying? 'Pause' : 'Play'}</button>
                     </div>
                 </>
+        ) : (
+        <p>Select a song to play</p>
             )
     )
     </div>
