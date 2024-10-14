@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Hawler from "react-howler";
+import Howler from "react-howler";
 
 const Player = ({ currentSong, isPlaying, setIsplaying }) => {
   const playerRef = useRef(null);
