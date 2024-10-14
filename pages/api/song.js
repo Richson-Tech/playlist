@@ -1,5 +1,5 @@
-import dbConnect from "../../dbConnect";
-import Song from "../../../Song";
+import dbConnect from "../../models/utils/dbConnect";
+import Song from "../../models/Song";
 
 export default async function handler(req, res) {
     await dbConnect();
